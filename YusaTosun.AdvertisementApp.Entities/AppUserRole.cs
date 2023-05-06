@@ -8,9 +8,9 @@ namespace YusaTosun.AdvertisementApp.Entities
 {
     public class AppUserRole : BaseEntities
     {
-        public int UserId { get; set; }
+        public int AppUserId { get; set; }
         public AppUser User { get; set; }
-        public int RoleId { get; set; }
+        public int AppRoleId { get; set; }
         public AppRole Role { get; set; }
     }
 }
