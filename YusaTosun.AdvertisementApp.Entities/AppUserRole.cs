@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YusaTosun.AdvertisementApp.Entities
 {
-    public class AppUserRole : BaseEntities
+    public class AppUserRole : BaseEntity
     {
         public int AppUserId { get; set; }
         public AppUser User { get; set; }

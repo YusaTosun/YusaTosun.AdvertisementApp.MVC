@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace YusaTosun.AdvertisementApp.Entities
 {
-    public class BaseEntities
+    public class AdvertisementAppUserStatus:BaseEntity
     {
-        public int Id { get; set; }
+        public string Definition { get; set; }
+        public List<AdvertisementAppUser> AdvertisementAppUsers { get; set; }
     }
 }

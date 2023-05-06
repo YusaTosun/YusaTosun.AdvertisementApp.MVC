@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YusaTosun.AdvertisementApp.Entities
 {
-    public class Advertisement:BaseEntities
+    public class Advertisement:BaseEntity
     {
         public string Title { get; set; }
         public bool Status { get; set; }
