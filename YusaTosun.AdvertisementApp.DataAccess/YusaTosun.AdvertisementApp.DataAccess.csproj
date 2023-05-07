@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\YusaTosun.AdvertisementApp.Common\YusaTosun.AdvertisementApp.Common.csproj" />
     <ProjectReference Include="..\YusaTosun.AdvertisementApp.Entities\YusaTosun.AdvertisementApp.Entities.csproj" />
   </ItemGroup>
 

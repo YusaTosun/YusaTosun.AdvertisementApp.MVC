@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YusaTosun.AdvertisementApp.DataAccess.Configurations;
 using YusaTosun.AdvertisementApp.Entities;
 
 namespace YusaTosun.AdvertisementApp.DataAccess.Contexts
@@ -13,6 +14,10 @@ namespace YusaTosun.AdvertisementApp.DataAccess.Contexts
         public AdvertisementContext(DbContextOptions<AdvertisementContext> options):base(options)
         {
             
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new AdvertisementAppUserConfiguration()).ApplyConfiguration(new AdvertisementAppUserStatusConfiguration()).ApplyConfiguration(new AdvertisementConfiguration()).ApplyConfiguration(new AppRoleConfiguration()).ApplyConfiguration(new AppUserConfiguration()).ApplyConfiguration(new AppUserRoleConfiguration()).ApplyConfiguration(new GenderConfiguration()).ApplyConfiguration(new MilitaryStatusConfiguration()).ApplyConfiguration(new ProvidedServicesConfiguration());
         }
         public DbSet<Advertisement> Advertisements { get; set; }
         public DbSet<AdvertisementAppUser> AdvertisementAppUsers { get; set; }
