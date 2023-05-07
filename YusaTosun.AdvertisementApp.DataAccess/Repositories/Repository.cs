@@ -7,11 +7,12 @@ using System.Text;
 using System.Threading.Tasks;
 using YusaTosun.AdvertisementApp.Common.Enums;
 using YusaTosun.AdvertisementApp.DataAccess.Contexts;
+using YusaTosun.AdvertisementApp.DataAccess.Interfaces;
 using YusaTosun.AdvertisementApp.Entities;
 
 namespace YusaTosun.AdvertisementApp.DataAccess.Repositories
 {
-    public class Repository<T> where T : BaseEntity
+    public class Repository<T> : IRepository<T> where T : BaseEntity
     {
         private readonly AdvertisementContext _context;
 
