@@ -8,7 +8,7 @@ using YusaTosun.AdvertisementApp.Entities;
 
 namespace YusaTosun.AdvertisementApp.DataAccess.UnitOfWork
 {
-    public interface IUnitOfWork
+    public interface IUow
     {
         IRepository<T> GetRepository<T>() where T : BaseEntity;
         Task SaveChangesAsync();
