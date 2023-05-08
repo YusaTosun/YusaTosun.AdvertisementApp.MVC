@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace YusaTosun.AdvertisementApp.Entities
 {
-    public class AdvertisementAppUser
+    public class AdvertisementAppUser:BaseEntity
     {
         public int AdvertisementId { get; set; }
         public Advertisement Advertisement { get; set; }
