@@ -1,3 +1,5 @@
+using YusaTosun.AdvertisementApp.Business.DepencyResolvers.Microsoft;
+
 namespace YusaTosun.AdvertisementApp.MVC
 {
     public class Program
@@ -8,7 +10,7 @@ namespace YusaTosun.AdvertisementApp.MVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddDependencies();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
