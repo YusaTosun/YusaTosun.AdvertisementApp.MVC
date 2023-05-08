@@ -10,7 +10,7 @@ using YusaTosun.AdvertisementApp.Entities;
 
 namespace YusaTosun.AdvertisementApp.DataAccess.UnitOfWork
 {
-    public class Uow
+    public class Uow:IUow
     {
         private readonly AdvertisementContext _context;
         public Uow(AdvertisementContext context)
